@@ -1,0 +1,102 @@
+// Backgrounds
+$bg-primary: #FFFFFF; // Main background - cards, header
+$bg-secondary: #F0F4FB; // Second background - all structure under cards
+$bg-teriatry: #0E1E3D; // Main color for navbar
+
+// Texts
+$txt-primary: #0E1E3D; // Main text
+$txt-secondary: #7D93BC; // Second text, subtitles
+
+$txt-links: #1A56DB; // All links
+
+$txt-info-success: #059669;
+$txt-info-error: #991B1B;
+$txt-info-warring: #92400E;
+$txt-info-info: #1A56DB;
+
+// Navbar
+$txt-navbar-nav: rgba(255, 255, 255, .55); // Navigation elements
+$txt-navbar-nav-title: rgba(255, 255, 255, .28); // Navigation section title
+$txt-navbar-nav-hover: rgba(255, 255, 255, .9); // Navigation elements hover
+$txt-navbar-title: #FFFFFF; // Main title on navbar
+$txt-navbar-subtitle: #93B4F7; // Text under main title on navbar
+
+// Charts
+$chart-blue: #1A56DB;
+$chart-orange: #D97706;
+$chart-green: #059669;
+$chart-purple: #7C3AED;
+$chart-previous: #D8E0F0;
+
+// Labels
+$label-bg-red: #FEE2E2;
+$label-txt-red: #991B1B;
+
+$label-bg-orange: #FEF3C7;
+$label-txt-orange: #92400E;
+
+$label-bg-green: #D1FAE5;
+$label-txt-green: #065F46;
+
+$label-bg-purple: #EDE9FE;
+$label-txt-purple: #7C3AED;
+
+$label-bg-blue: #1A56DB22;
+$label-txt-blue: #1A56DB;
+
+// Icons
+$icon-bg-red: #FEE2E2;
+$icon-txt-red: #991B1B;
+
+$icon-bg-orange: #FEF3C7;
+$icon-txt-orange: #92400E;
+
+$icon-bg-green: #D1FAE5;
+$icon-txt-green: #065F46;
+
+$icon-bg-purple: #EDE9FE;
+$icon-txt-purple: #7C3AED;
+
+$icon-bg-blue: #1A56DB22;
+$icon-txt-blue: #1A56DB;
+
+// Dots
+$dot-red: #991B1B;
+$dot-orange: #92400E;
+$dot-green: #065F46;
+
+// Accent lines
+$line-red: #991B1B;
+$line-orange: #92400E;
+$line-green: #065F46;
+$line-purple: #7C3AED;
+$line-blue: #1A56DB;
+
+// Buttons
+$btn-bg-primary: #1A56DB;
+$btn-bg-primary-hover: #1340B0;
+$btn-txt-primary: #FFFFFF;
+
+$btn-bg-secondary: #FEE2E2;
+$btn-txt-secondary: #991B1B;
+$btn-border-secondary: rgba(220, 38, 38, .2);
+
+$btn-bg-outline: #FFFFFF;
+$btn-bg-outline-hover: #F7F9FE;
+$btn-txt-outline: #3D5280;
+$btn-border-outline: rgba(26, 86, 219, .1);
+$btn-border-outline-hover: rgba(26, 86, 219, .2);
+
+// Inputs
+$input-bg: #FFFFFF;
+$input-txt: #0E1E3D;
+$input-border: rgba(26, 86, 219, .1);
+$input-border-focus: #1A56DB;
+
+// Borders
+$border-primary: rgba(26, 86, 219, .1);
+
+// Shadows
+$shadow-primary: rgba(14, 30, 61, .08);
+$shadow-secondary: rgba(14, 30, 61, .05);
+$shadow-hover: rgba(14, 30, 61, .12);
