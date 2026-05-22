@@ -1,0 +1,19 @@
+@use '../abstract/variables/text' as txt;
+
+// Font Families
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
+
+$font-family-primary: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Century Gothic', Arial, sans-serif;
+$font-family-secondary: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+
+// Font weights
+$font-weight-strong: 700;
+$font-weight-medium: 500;
+$font-weight-light: 400;
+
+// Font sizes
+$font-size-heading1: clamp(txt.$heading-1-mobile, 1.0817rem + .1923vw, txt.$heading-1-desktop);
+$font-size-heading2: clamp(txt.$heading-2-mobile, .6851rem + .2885vw, txt.$heading-2-desktop);
+$font-size-heading3: clamp(txt.$heading-3-mobile, .6442rem + .1923vw, txt.$heading-3-desktop);
+
+$font-size-amount-main: clamp(txt.$amount-main-mobile, .8317rem + .1923vw, txt.$amount-main-desktop);
