@@ -27,11 +27,8 @@
 
 // Navbar - desktop and tablet
 @mixin navbar-desktop {
-    width: size.$navbar-size-desktop;
-    background-color: color.$bg-teriatry;
-    display: flex;
-    flex-direction: column;
     position: relative;
+    transform: translateX(0);
 }
 
 @mixin navbar-title {
@@ -55,11 +52,14 @@
 
 // Navbar - mobile
 @mixin navbar-mobile {
+    background-color: color.$bg-teriatry;
     position: fixed;
+    display: flex;
+    flex-direction: column;
     bottom: 0;
     left: 0;
     top: 0;
-    height: size.$navbar-size-mobile;
+    width: size.$navbar-size;
     transform: translateX(-100%);
     z-index: 60;
 }
@@ -86,4 +86,25 @@
                 size.$shadow-secondary-size color.$shadow-secondary;
     overflow: hidden;
     position: relative;
+}
+
+// Topbar
+@mixin topbar {
+    height: size.$topbar-size;
+    background-color: color.$bg-primary;
+    display: flex;
+    align-items: center;
+    gap: size.$gap-topbar;
+}
+
+// Bottombar - only for mobile
+@mixin bottombar {
+    background-color: color.$bg-primary;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    z-index: 90;
 }

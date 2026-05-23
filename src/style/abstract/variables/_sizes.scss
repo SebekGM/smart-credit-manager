@@ -28,6 +28,8 @@ $gap-modal-footer: 9px;
 
 $gap-nav-nav: 10px;
 
+$gap-topbar: 14px;
+
 // Shadows
 $shadow-primary-size: 0 1px 3px;
 $shadow-secondary-size: 0 4px 16px;
@@ -42,5 +44,7 @@ $transition-button: background .2s ease-in-out;
 $transition-nav: all .15s ease;
 
 // Navbar
-$navbar-size-mobile: 64px;
-$navbar-size-desktop: 230px;
+$navbar-size: 230px;
+
+// Topbar
+$topbar-size: 60px;
