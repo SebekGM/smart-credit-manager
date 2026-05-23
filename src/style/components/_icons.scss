@@ -1,0 +1,19 @@
+@use '../abstract/variables/colors' as color;
+@use '../abstract/variables/sizes' as size;
+@use '../abstract/variables/text' as txt;
+@use '../abstract/mixins' as *;
+@use '../base/typography' as typo;
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+
+    &-main {
+        background-color: color.$btn-bg-primary;
+        color: color.$bg-primary;
+    }
+}

@@ -1,0 +1,36 @@
+@use '../abstract/variables/colors' as color;
+@use '../abstract/variables/sizes' as size;
+@use '../abstract/variables/text' as txt;
+@use '../base/typography' as typo;
+@use '../abstract/mixins' as *;
+
+.sidebar {
+    @include navbar-mobile;
+
+    &-head {
+        display: flex;
+        align-items: center;
+        padding: 22px 18px 16px;
+        gap: 11px;
+        border-bottom: 1px solid rgba(255, 255, 255, .07);
+
+        &__name {
+                font-weight: typo.$font-weight-strong;
+            
+            &-title {
+                color: color.$txt-navbar-title;
+                text-transform: capitalize;
+                font-size: txt.$nav-top-title;
+
+            }
+
+            &-subtitle {
+                color: color.$txt-navbar-subtitle;
+                text-transform: uppercase;
+                font-size: txt.$nav-top-subtitle;
+                line-height: 1.6;
+                letter-spacing: 1.4px;
+            }
+        }
+    }
+}
