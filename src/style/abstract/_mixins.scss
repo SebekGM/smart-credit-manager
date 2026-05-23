@@ -1,0 +1,58 @@
+@use './variables/colors' as color;
+@use './variables/sizes' as size;
+@use './variables/text' as txt;
+@use '../base/typography' as typo;
+
+// Headings
+@mixin heading-1 {
+    font-family: typo.$font-family-secondary;
+    font-size: typo.$font-size-heading1;
+    font-weight: typo.$font-weight-xstrong;
+    color: color.$txt-primary;
+}
+
+@mixin heading-2 {
+    font-family: typo.$font-family-secondary;
+    font-size: typo.$font-size-heading2;
+    font-weight: typo.$font-weight-medium;
+    color: color.$txt-primary;
+}
+
+@mixin heading-3 {
+    font-family: typo.$font-family-secondary;
+    font-size: typo.$font-size-heading3;
+    font-weight: typo.$font-weight-medium;
+    color: color.$txt-primary;
+}
+
+// Navbar
+@mixin navbar-title {
+    font-size: txt.$nav-mid-title;
+    font-weight: typo.$font-weight-strong;
+    color: color.$txt-navbar-nav-title;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+@mixin navbar-nav {
+    font-size: txt.$nav-mid-nav;
+    color: color.$txt-navbar-nav;
+    transition: size.$transition-nav;
+}
+
+@mixin navbar-hover {
+    color: color.$txt-navbar-nav-hover;
+    background-color: color.$bg-navbar-nav-hover;
+}
+
+// Main cards
+@mixin card-main {
+    background-color: color.$bg-primary;
+    border: 1px solid color.$border-primary;
+    border-radius: 14px;
+    box-shadow: 0 1px 3px color.$shadow-primary
+                0 4px 16px color.$shadow-secondary;
+    transition: size.$transition-card;
+    padding: size.$padding-card-main;
+    overflow: hidden;
+}
