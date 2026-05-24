@@ -42,7 +42,16 @@
 @mixin navbar-nav {
     font-size: txt.$nav-mid-nav;
     color: color.$txt-navbar-nav;
+    font-weight: typo.$font-weight-light;
+    gap: 10px;
+    padding: size.$padding-nav-content;
     transition: size.$transition-nav;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    position: relative;
+    border-radius: 9px;
 }
 
 @mixin navbar-hover {

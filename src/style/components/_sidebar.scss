@@ -33,4 +33,90 @@
             }
         }
     }
+
+    &-navigation {
+        display: flex;
+        flex-direction: column;
+        padding: size.$padding-nav-content;
+        overflow-y: auto;
+
+        &-group {
+            &:not(:first-child) {
+                margin-top: 5px;
+            }
+
+            &__title {
+                @include navbar-title;
+                margin: 16px 0 6px;
+                padding: 0 10px;
+            }
+
+            &__item {
+                @include navbar-nav;
+
+                &:hover {
+                    @include navbar-hover;
+                }
+
+                &.active {
+                    background-color: color.$bg-additional;
+                    color: color.$txt-tertiary;
+                    font-weight: typo.$font-weight-medium;
+                }
+
+                &-icon {
+                    font-size: txt.$nav-top-title;
+                }
+
+                &-badge {
+                    margin-left: auto;
+                    padding: 1px 6px;
+                    background-color: #DC2626;
+                    border-radius: 99px;
+                    font-size: 10px;
+                    line-height: 1.6;
+                    font-weight: typo.$font-weight-strong;
+                    color: color.$txt-tertiary;
+                }
+            }
+        }
+    }
+
+    &-footer {
+        padding: 23px 20px;
+        border-top: 1px solid rgba(255, 255, 255, .07);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: auto;
+
+        &__logo {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: color.$bg-additional;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: txt.$nav-bot-initials;
+            font-weight: typo.$font-weight-strong;
+            color: color.$txt-tertiary;
+            font-family: typo.$font-family-secondary;
+        }
+
+        &-name {
+            &__user {
+                font-size: txt.$nav-bot-name;
+                font-weight: typo.$font-weight-medium;
+                color: color.$txt-navbar-nav-hover;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+            }
+
+            &__function {
+                font-size: txt.$nav-bot-initials;
+                color: rgba(color.$txt-links, .9);
+            }
+        }
+    }
 }
