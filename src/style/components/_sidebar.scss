@@ -15,8 +15,8 @@
         border-bottom: 1px solid rgba(255, 255, 255, .07);
 
         &__name {
-                font-weight: typo.$font-weight-strong;
-            
+            font-weight: typo.$font-weight-strong;
+
             &-title {
                 color: color.$txt-navbar-title;
                 text-transform: capitalize;
@@ -83,12 +83,23 @@
     }
 
     &-footer {
-        padding: 23px 20px;
         border-top: 1px solid rgba(255, 255, 255, .07);
-        display: flex;
-        align-items: center;
-        gap: 10px;
         margin-top: auto;
+        padding: size.$padding-nav-bottom;
+
+        &__item {
+            padding: size.$padding-nav-content;
+            border-radius: 9px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: size.$transition-nav;
+
+            &:hover {
+                @include navbar-hover;
+            }
+        }
 
         &__logo {
             width: 32px;
