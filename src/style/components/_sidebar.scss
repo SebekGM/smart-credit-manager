@@ -7,6 +7,14 @@
 .sidebar {
     @include navbar-mobile;
 
+    @include respond-to(size.$bp-laptop) {
+        @include navbar-desktop;
+    }
+
+    &.active {
+        transform: translateX(0);
+    }
+
     &-head {
         display: flex;
         align-items: center;
