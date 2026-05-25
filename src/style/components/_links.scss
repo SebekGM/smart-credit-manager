@@ -1,0 +1,13 @@
+@use '../abstract/mixins' as *;
+@use '../abstract/variables/colors' as color;
+@use '../abstract/variables/sizes' as size;
+@use '../abstract/variables/text' as txt;
+@use '../base/typography' as typo;
+
+.link {
+    text-decoration: none;
+    
+    &-navbar {
+        color: inherit;
+    }
+}

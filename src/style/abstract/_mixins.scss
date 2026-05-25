@@ -69,7 +69,7 @@
     left: 0;
     top: 0;
     width: size.$navbar-size;
-    transform: translateX(0);
+    transform: translateX(-100%);
     z-index: 60;
 }
 
@@ -116,4 +116,17 @@
     right: 0;
     height: 64px;
     z-index: 90;
+}
+
+// MEDIA QUERIES
+@mixin respond-to($bp) {
+    @media screen and (min-width: $bp) {
+        @content;
+    }
+}
+
+@mixin respond-between($bp-start, $bp-end) {
+    @media screen and (min-width: $bp-start) and (max-width: $bp-end) {
+        @content;
+    }
 }
