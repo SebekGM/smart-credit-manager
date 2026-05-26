@@ -1,0 +1,65 @@
+@use '../abstract/variables/colors' as color;
+@use '../abstract/variables/sizes' as size;
+@use '../abstract/variables/text' as txt;
+@use '../base/typography' as typo;
+@use '../abstract/mixins' as *;
+
+.topbar {
+    display: flex;
+    background-color: color.$bg-primary;
+    border-bottom: 1px solid color.$border-primary;
+    align-items: center;
+    gap: size.$gap-topbar;
+    transition: size.$transition-topbar;
+    height: size.$topbar-size;
+
+    &-left {
+
+        &__hamburger {
+            @include respond-to(size.$bp-laptop) {
+                display: none;
+            }
+        }
+
+        &__title {
+
+            &-subheading {
+                display: none;
+
+                @include respond-to(size.$bp-laptop) {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &-right {
+
+        &__search {
+            display: none;
+
+            @include respond-to(size.$bp-laptop) {
+                display: block;
+            }
+        }
+
+        &__button {
+
+            .btn--desktop {
+                display: none;
+
+                @include respond-to(size.$bp-laptop) {
+                    display: block;
+                }
+            }
+
+            .btn--mobile {
+                display: block;
+
+                @include respond-to(size.$bp-laptop) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -42,6 +42,8 @@ $transform: translateY(-1px);
 $transition-card: all .2 ease;
 $transition-button: background .2s ease-in-out;
 $transition-nav: all .15s ease;
+$transition-topbar: background .25s ease,
+                    border-color .25s ease;
 
 // Navbar
 $navbar-size: 230px;
