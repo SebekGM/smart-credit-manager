@@ -1,0 +1,47 @@
+@use '../abstract/variables/colors' as color;
+@use '../abstract/variables/sizes' as size;
+@use '../abstract/variables/text' as txt;
+@use '../base/typography' as typo;
+@use '../abstract/mixins' as *;
+
+// Search input
+.search-input {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    border: 1px solid color.$border-primary;
+    background-color: color.$bg-primary;
+    border-radius: 9px;
+    padding: size.$padding-input;
+    cursor: text;
+
+    &:focus-within {
+        outline: 1px solid color.$input-border-focus;
+    }
+
+    &:hover {
+        background-color: #F7F9FE;
+        border-color: rgba(26, 86, 219, .2);
+    }
+
+    &__input {
+        border: none;
+        font-family: typo.$font-family-primary;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            font-family: typo.$font-family-primary;
+        }
+    }
+
+    &__btn {
+        border: none;
+        background-color: color.$bg-primary;
+        border-left: 1px solid color.$border-primary;
+        padding: 0 0 0 8px;
+        cursor: pointer;
+    }
+}
