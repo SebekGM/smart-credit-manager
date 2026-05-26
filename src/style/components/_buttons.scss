@@ -1,0 +1,27 @@
+@use '../abstract/variables/colors' as color;
+@use '../abstract/variables/sizes' as size;
+@use '../abstract/variables/text' as txt;
+@use '../base/typography' as typo;
+@use '../abstract/mixins' as *;
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border-radius: 9px;
+    border: none;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: typo.$font-weight-medium;
+    cursor: pointer;
+
+    &--primary {
+        background-color: color.$btn-bg-primary;
+        color: color.$btn-txt-primary;
+        transition: size.$transition-button;
+
+        &:hover {
+            background-color: color.$btn-bg-primary-hover;
+        }
+    }
+}
