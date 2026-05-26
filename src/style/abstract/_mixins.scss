@@ -25,6 +25,14 @@
     color: color.$txt-primary;
 }
 
+@mixin subheading {
+    font-family: typo.$font-family-secondary;
+    font-size: txt.$subtitle-medium;
+    color: color.$txt-secondary;
+    margin-top: 4px;
+    font-weight: typo.$font-weight-light;
+}
+
 // Navbar - desktop and tablet
 @mixin navbar-desktop {
     transform: translateX(0);

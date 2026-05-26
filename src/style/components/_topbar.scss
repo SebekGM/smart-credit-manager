@@ -12,8 +12,37 @@
     gap: size.$gap-topbar;
     transition: size.$transition-topbar;
     height: size.$topbar-size;
+    padding: 0 14px;
+
+    @include respond-to(size.$bp-laptop) {
+        padding: 0 26px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: size.$navbar-size;
+    }
 
     &-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+
+            &-heading {
+                @include heading-1;
+            }
+
+            &-subheading {
+                @include subheading;
+
+                i {
+                    font-style: italic;
+                }
+            }
+        }
 
         &__hamburger {
             @include respond-to(size.$bp-laptop) {
@@ -34,6 +63,10 @@
     }
 
     &-right {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        gap: 10px;
 
         &__search {
             display: none;
