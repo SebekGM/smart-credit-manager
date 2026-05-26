@@ -16,4 +16,19 @@
         background-color: color.$btn-bg-primary;
         color: color.$bg-primary;
     }
+
+    &-topbar {
+        width: 36px;
+        height: 36px;
+        border-radius: 9px;
+        border: 1px solid color.$border-primary;
+        background-color: color.$bg-primary;
+        cursor: pointer;
+        transition: size.$transition-topbar;
+
+        &:hover {
+            background-color: #F7F9FE;
+            border-color: rgba(26, 86, 219, .2);
+        }
+    }
 }
