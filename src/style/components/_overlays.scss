@@ -12,4 +12,8 @@
     background-color: rgba(8, 14, 30, .5);
     z-index: 50;
     backdrop-filter: blur(2px);
+
+    &.active {
+        display: block;
+    }
 }
