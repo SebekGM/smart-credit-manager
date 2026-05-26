@@ -1,0 +1,68 @@
+@use '../abstract/variables/colors' as color;
+@use '../abstract/variables/sizes' as size;
+@use '../abstract/variables/text' as txt;
+@use '../base/typography' as typo;
+@use '../abstract/mixins' as *;
+
+// Only for mobile
+
+.bottomnav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid color.$border-primary;
+    height: size.$bottomnav-size;
+    background-color: color.$bg-primary;
+    z-index: 50;
+
+    &-items {
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        padding: size.$padding-nav-bottom;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: color.$txt-secondary;
+            gap: 5px;
+            cursor: pointer;
+            font-weight: typo.$font-weight-medium;
+            transition: color .15s ease-in;
+            position: relative;
+
+            &.active {
+                color: color.$bg-additional;
+            }
+
+            &-icon {
+                font-size: 16px;
+            }
+
+            &-description {
+                font-size: 11px;
+            }
+        }
+
+        &__add {
+            background-color: color.$bg-additional;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 4px;
+            color: color.$txt-tertiary;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(26, 86, 219, .4);
+            border-color: transparent;
+            cursor: pointer;
+        }
+    }
+
+    @include respond-to(size.$bp-laptop) {
+        display: none;
+    }
+}
