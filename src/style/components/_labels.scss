@@ -26,4 +26,19 @@
         color: color.$label-txt-red;
         background-color: color.$label-bg-red;
     }
+
+    &__orange {
+        color: color.$label-txt-orange;
+        background-color: color.$label-bg-orange;
+    }
+
+    &__green {
+        color: color.$label-txt-green;
+        background-color: color.$label-bg-green;
+    }
+
+    &__purple {
+        color: color.$label-txt-purple;
+        background-color: color.$label-bg-purple;
+    }
 }

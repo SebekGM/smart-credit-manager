@@ -1,0 +1,36 @@
+@use '../abstract/variables/colors' as color;
+@use '../abstract/variables/sizes' as size;
+@use '../abstract/variables/text' as txt;
+@use '../base/typography' as typo;
+@use '../abstract/mixins' as *;
+
+.chart-vertical {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 3px;
+    height: 50px;
+
+    &-item {
+        height: 100%;
+        background-color: color.$chart-previous;
+        border-radius: 2px 2px 0 0;
+        width: 100%;
+
+        &__blue {
+            background-color: color.$chart-blue;
+        }
+
+        &__orange {
+            background-color: color.$chart-orange;
+        }
+
+        &__green {
+            background-color: color.$chart-green;
+        }
+
+        &__purple {
+            background-color: color.$chart-purple;
+        }
+    }
+}

@@ -46,6 +46,18 @@
             &-blue {
                 background-color: color.$line-blue;
             }
+
+            &-orange {
+                background-color: color.$line-orange;
+            }
+
+            &-green {
+                background-color: color.$line-green;
+            }
+
+            &-purple {
+                background-color: color.$line-purple;
+            }
         }
 
         &__icon {
@@ -60,6 +72,21 @@
             &-blue {
                 background-color: color.$icon-bg-blue;
                 color: color.$icon-txt-blue;
+            }
+
+            &-orange {
+                background-color: color.$icon-bg-orange;
+                color: color.$icon-txt-orange;
+            }
+
+            &-green {
+                background-color: color.$icon-bg-green;
+                color: color.$icon-txt-green;
+            }
+
+            &-purple {
+                background-color: color.$icon-bg-purple;
+                color: color.$icon-txt-purple;
             }
         }
 
@@ -95,11 +122,7 @@
         }
 
         &__chart {
-            display: flex;
-            align-items: flex-end;
-            gap: 3px;
-            height: 26px;
-            margin-top: 10px;
+            margin-top: 20px;
         }
     }
 }
