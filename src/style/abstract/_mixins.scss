@@ -85,12 +85,13 @@
     background-color: color.$bg-primary;
     border: 1px solid color.$border-primary;
     border-radius: 14px;
-    box-shadow: size.$shadow-primary-size color.$shadow-primary
+    box-shadow: size.$shadow-primary-size color.$shadow-primary,
                 size.$shadow-secondary-size color.$shadow-secondary;
     transition: size.$transition-card;
     padding: size.$padding-card-main;
     overflow: hidden;
     position: relative;
+    z-index: 50;
 }
 
 @mixin card-statistics {
@@ -102,27 +103,6 @@
                 size.$shadow-secondary-size color.$shadow-secondary;
     overflow: hidden;
     position: relative;
-}
-
-// Topbar
-@mixin topbar {
-    height: size.$topbar-size;
-    background-color: color.$bg-primary;
-    display: flex;
-    align-items: center;
-    gap: size.$gap-topbar;
-}
-
-// Bottombar - only for mobile
-@mixin bottombar {
-    background-color: color.$bg-primary;
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 64px;
-    z-index: 90;
 }
 
 // MEDIA QUERIES

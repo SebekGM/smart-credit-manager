@@ -1,0 +1,21 @@
+@use '../abstract/variables/colors' as color;
+@use '../abstract/variables/sizes' as size;
+@use '../abstract/variables/text' as txt;
+@use '../base/typography' as typo;
+@use '../abstract/mixins' as *;
+
+.content {
+    position: absolute;
+    left: 0;
+    top: size.$topbar-size;
+    background-color: color.$bg-secondary;
+    padding: 24px 26px;
+    right: 0;
+    overflow-y: auto;
+    height: calc(100vh - size.$topbar-size - size.$bottomnav-size);
+
+    @include respond-to(size.$bp-laptop) {
+        left: size.$navbar-size;
+        height: calc(100vh - size.$topbar-size);
+    }
+}

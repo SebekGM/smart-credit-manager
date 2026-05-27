@@ -1,0 +1,29 @@
+@use '../abstract/variables/colors' as color;
+@use '../abstract/variables/sizes' as size;
+@use '../abstract/variables/text' as txt;
+@use '../base/typography' as typo;
+@use '../abstract/mixins' as *;
+
+.label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-weight: typo.$font-weight-medium;
+    border-radius: 99px;
+
+    &__num {
+        font-size: txt.$label-num;
+        padding: size.$padding-label-num;
+    }
+
+    &__blue {
+        color: color.$label-txt-blue;
+        background-color: color.$label-bg-blue;
+    }
+
+    &__red {
+        color: color.$label-txt-red;
+        background-color: color.$label-bg-red;
+    }
+}
