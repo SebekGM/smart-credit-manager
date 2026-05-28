@@ -1,0 +1,19 @@
+@use '../abstract/variables/colors' as color;
+
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    
+    &-green {
+        background-color: color.$dot-green;
+    }
+
+    &-red {
+        background-color: color.$dot-red;
+    }
+
+    &-orange {
+        background-color: color.$dot-orange;
+    }
+}

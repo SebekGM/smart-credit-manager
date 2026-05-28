@@ -17,6 +17,11 @@
         padding: size.$padding-label-num;
     }
 
+    &__text {
+        font-size: txt.$label-txt;
+        padding: size.$padding-label-text;
+    }
+
     &__blue {
         color: color.$label-txt-blue;
         background-color: color.$label-bg-blue;
