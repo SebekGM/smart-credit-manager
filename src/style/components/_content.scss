@@ -18,4 +18,8 @@
         left: size.$navbar-size;
         height: calc(100vh - size.$topbar-size);
     }
+
+    &-details {
+        margin-top: 14px;
+    }
 }

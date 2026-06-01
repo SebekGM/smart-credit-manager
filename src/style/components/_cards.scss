@@ -19,6 +19,16 @@
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
     }
+
+    &-details {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+
+        @include respond-to(size.$bp-laptop) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }
 
 
@@ -123,6 +133,87 @@
 
         &__chart {
             margin-top: 20px;
+        }
+    }
+
+    &-details {
+        @include card-statistics;
+
+        &__head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            &-title {
+                font-size: 13px;
+                font-weight: typo.$font-weight-strong;
+                color: color.$txt-primary;
+            }
+
+            &-link {
+                font-size: 12px;
+                color: color.$txt-links;
+                cursor: pointer;
+                font-weight: typo.$font-weight-medium;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &__item {
+            padding: size.$padding-card-stat-item;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid color.$border-primary;
+            }
+
+            &-heading {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 6px;
+            }
+
+            &-icon {
+                width: 34px;
+                height: 34px;
+                border-radius: 9px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+
+            &-description {
+                flex: 1;
+
+                &-title {
+                    font-size: 13px;
+                    font-weight: typo.$font-weight-medium;
+                    color: color.$txt-primary;
+                }
+
+                &-subtitle {
+                    font-size: 11px;
+                    color: color.$txt-secondary;
+                    margin-top: 4px;
+                }
+            }
+
+            &-amount {
+                text-align: right;
+
+                &-price {
+                    font-size: 13px;
+                    font-weight: typo.$font-weight-strong;
+                    color: color.$txt-primary;
+                    margin-bottom: 2px;
+                }
+            }
         }
     }
 }

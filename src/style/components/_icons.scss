@@ -31,4 +31,9 @@
             border-color: rgba(26, 86, 219, .2);
         }
     }
+
+    &-blue {
+        background-color: color.$icon-bg-blue;
+        color: color.$icon-txt-blue;
+    }
 }
