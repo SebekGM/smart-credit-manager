@@ -1,0 +1,22 @@
+@use '../abstract/variables/colors' as color;
+@use '../abstract/variables/sizes' as size;
+@use '../abstract/variables/text' as txt;
+@use '../base/typography' as typo;
+@use '../abstract/mixins' as *;
+
+.modal {
+    background-color: color.$bg-primary;
+    border-radius: 18px;
+    border: 1px solid color.$border-primary;
+    width: 460px;
+    max-width: calc(100% - 32px);
+    max-height: 90vh;
+    overflow-y: auto;
+    transition: transform .2s;
+    box-shadow: 0 8px 32px rgba(14, 30, 61, .12);
+    transform: translateY(10px) scale(.98);
+
+    &.open {
+        transform: translateY(0) scale(1);
+    }
+}
