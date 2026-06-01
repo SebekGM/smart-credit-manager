@@ -34,3 +34,21 @@
         }
     }
 }
+
+.chart-horizontal {
+    height: 6px;
+    background-color: color.$chart-previous;
+    border-radius: 99px;
+    overflow: hidden;
+
+    &__track {
+        height: 100%;
+        border-radius: 99px;
+        transition: width .8s cubic-bezier(.4, 0, .2, 1);
+
+        &-blue {
+            background-color: color.$chart-blue;
+            width: 23%;
+        }
+    }
+}

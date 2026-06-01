@@ -99,7 +99,7 @@
     border: 1px solid color.$border-primary;
     border-radius: 14px;
     padding: size.$padding-card-stat;
-    box-shadow: size.$shadow-primary-size color.$shadow-primary
+    box-shadow: size.$shadow-primary-size color.$shadow-primary,
                 size.$shadow-secondary-size color.$shadow-secondary;
     overflow: hidden;
     position: relative;
