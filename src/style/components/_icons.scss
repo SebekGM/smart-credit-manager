@@ -36,4 +36,24 @@
         background-color: color.$icon-bg-blue;
         color: color.$icon-txt-blue;
     }
+
+    &-purple {
+        background-color: color.$icon-bg-purple;
+        color: color.$icon-txt-purple;
+    }
+
+    &-orange {
+        background-color: color.$icon-bg-orange;
+        color: color.$icon-txt-orange;
+    }
+
+    &-green {
+        background-color: color.$icon-bg-green;
+        color: color.$icon-txt-green;
+    }
+
+    &-red {
+        background-color: color.$icon-bg-red;
+        color: color.$icon-txt-red;
+    }
 }

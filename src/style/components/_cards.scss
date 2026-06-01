@@ -167,6 +167,10 @@
             padding: size.$padding-card-stat-item;
             cursor: pointer;
 
+            &:not(:first-child) {
+                margin-top: 2px;
+            }
+
             &:not(:last-child) {
                 border-bottom: 1px solid color.$border-primary;
             }
@@ -213,6 +217,10 @@
                     color: color.$txt-primary;
                     margin-bottom: 2px;
                 }
+            }
+
+            &-chart {
+                margin-top: 15px;
             }
         }
     }

@@ -50,5 +50,20 @@
             background-color: color.$chart-blue;
             width: 23%;
         }
+
+        &-purple {
+            background-color: color.$chart-purple;
+            width: 46%;
+        }
+
+        &-orange {
+            background-color: color.$chart-orange;
+            width: 74%;
+        }
+
+        &-green {
+            background-color: color.$chart-green;
+            width: 55%;
+        }
     }
 }
