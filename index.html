@@ -16,11 +16,11 @@
   <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
   <!-- MODAL OVERLAY -->
-  <div class="modal-overlay active" id="modal-overlay">
+  <div class="modal-overlay" id="modal-overlay">
     <section class="modal">
       <div class="modal-head">
         <h2 class="modal-head__title">Nowy kredyt</h2>
-        <div class="modal-head__close">
+        <div class="modal-head__close" id="modal-overlay-close-btn">
           <i class="fa-solid fa-x"></i>
         </div>
       </div>
@@ -62,7 +62,7 @@
         <button class="btn btn--primary btn--mobile">
           <span><i class="fa-solid fa-plus"></i></span>
         </button>
-        <button class="btn btn--primary btn--desktop">
+        <button class="btn btn--primary btn--desktop" id="new-credit-btn">
           <span><i class="fa-solid fa-plus"></i></span>
           <span>Nowy kredyt</span>
         </button>
@@ -469,7 +469,7 @@
       </div>
 
       <div class="bottomnav-items__item">
-        <button class="bottomnav-items__item-icon bottomnav-items__add">
+        <button class="bottomnav-items__item-icon bottomnav-items__add" id="new-credit-btn">
           <i class="fa-solid fa-plus"></i>
         </button>
       </div>
@@ -497,6 +497,7 @@
 
   <script type="module" src="./src/scripts/main.js"></script>
   <script type="module" src="./src/scripts/mobile_sidebar.js"></script>
+  <script type="module" src="./src/scripts/modal-overlay.js"></script>
 </body>
 
 </html>
