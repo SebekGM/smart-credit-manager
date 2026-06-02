@@ -1,6 +1,6 @@
 const modalOverlay = document.getElementById('modal-overlay');
 const creditBtn = document.querySelectorAll('#new-credit-btn');
-const modalCloseBtn = document.getElementById('modal-overlay-close-btn');
+const modalCloseBtn = document.querySelectorAll('#modal-overlay-close-btn');
 
 // open modal
 creditBtn.forEach(btn => {
@@ -9,9 +9,11 @@ creditBtn.forEach(btn => {
     });
 });
 
-// close 'x' btn
-modalCloseBtn.addEventListener('click', () => {
-    modalOverlay.classList.remove('active');
+// close 'x' or 'anuluj' btn
+modalCloseBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        modalOverlay.classList.remove('active');
+    });
 });
 
 // close to click around modal
