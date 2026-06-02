@@ -27,3 +27,17 @@ document.addEventListener('keydown', (e) => {
         modalOverlay.classList.remove('active');
     }
 });
+
+
+// change category of credit
+const category = document.querySelectorAll('#modal-category');
+
+category.forEach(cat => {
+    cat.addEventListener('click', () => {
+        category.forEach(c => {
+            c.classList.remove('active');
+        });
+
+        cat.classList.add('active');
+    });
+});
