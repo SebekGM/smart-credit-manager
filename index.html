@@ -33,8 +33,77 @@
             <div class="modal-body-row__cat-btn" id="modal-category" data-value="inny">Inny</div>
           </div>
         </div>
+
+        <div class="modal-body-row">
+          <label for="" class="modal-body-row__label">Nazwa kredytu</label>
+          <input type="text" class="modal-body-row__input" id="credit-name" placeholder="np. Kredyt hipoteczny BNP Paribas">
+        </div>
+
+        <div class="modal-body-row-twice">
+          <div class="modal-body-row">
+            <label class="modal-body-row__label">Nazwa banku</label>
+            <input type="text" class="modal-body-row__input" id="credit-bank-name">
+          </div>
+          <div class="modal-body-row">
+            <label class="modal-body-row__label">Numer umowy</label>
+            <input type="text" class="modal-body-row__input" id="credit-agreement-number">
+          </div>
+        </div>
+
+        <div class="modal-body-row-twice">
+          <div class="modal-body-row">
+            <label class="modal-body-row__label">Kwota kredytu</label>
+            <input type="number" class="modal-body-row__input" id="credit-value">
+          </div>
+          <div class="modal-body-row">
+            <label class="modal-body-row__label">Okres (miesiące)</label>
+            <input type="number" class="modal-body-row__input" id="credit-time">
+          </div>
+        </div>
+
+        <div class="modal-body-row-twice">
+          <div class="modal-body-row">
+            <label class="modal-body-row__label">Oprocentowanie</label>
+            <input type="number" class="modal-body-row__input" id="credit-interest">
+          </div>
+          <div class="modal-body-row">
+            <label class="modal-body-row__label">Prowizja</label>
+            <input type="number" class="modal-body-row__input" id="credit-commision">
+          </div>
+        </div>
+
+        <div class="modal-body-row-twice">
+          <div class="modal-body-row">
+            <label class="modal-body-row__label">Ubezpieczenie (procent)</label>
+            <input type="number" class="modal-body-row__input" id="credit-insurance">
+          </div>
+          <div class="modal-body-row">
+            <label class="modal-body-row__label">RRSO</label>
+            <input type="number" class="modal-body-row__input" id="credit-rrso" disabled>
+          </div>
+        </div>
+
+        <div class="modal-body-row-twice">
+          <div class="modal-body-row">
+            <label class="modal-body-row__label">Data uruchomienia</label>
+            <input type="date" class="modal-body-row__input" id="credit-start-date">
+          </div>
+          <div class="modal-body-row">
+            <label class="modal-body-row__label">Dzień płatności</label>
+            <input type="number" class="modal-body-row__input" id="credit-day">
+          </div>
+        </div>
+
+        <div class="modal-body-row">
+          <label class="modal-body-row__label">Uwagi</label>
+          <textarea class="modal-body-row__textarea" id="credit-comments"></textarea>
+        </div>
+
       </div>
-      <div class="modal-foot"></div>
+      <div class="modal-foot">
+        <button class="btn btn--outline">Anuluj</button>
+        <button class="btn btn--primary">Dodaj kredyt</button>
+      </div>
     </section>
   </div>
 

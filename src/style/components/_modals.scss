@@ -65,6 +65,40 @@
                     }
                 }
             }
+
+            &__label {
+                font-weight: typo.$font-weight-medium;
+                color: #3D5280;
+                margin-bottom: 5px;
+                display: block;
+            }
+
+            &__input,
+            &__textarea {
+                width: 100%;
+                padding: 9px 13px;
+                border: 1px solid color.$border-primary;
+                border-radius: 9px;
+                font-size: 13px;
+                color: color.$txt-primary;
+                outline: none;
+                resize: none;
+                transition: border-color .15s;
+            }
+
+            &-twice {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
         }
+    }
+
+    &-foot {
+        padding: 14px 22px 20px;
+        display: flex;
+        gap: 9px;
+        justify-content: flex-end;
+        border-top: 1px solid color.$border-primary;
     }
 }

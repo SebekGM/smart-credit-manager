@@ -24,4 +24,16 @@
             background-color: color.$btn-bg-primary-hover;
         }
     }
+
+    &--outline {
+        background-color: color.$btn-bg-outline;
+        transition: size.$transition-button;
+        padding: size.$padding-btn;
+        border: 1px solid color.$btn-border-outline;
+
+        &:hover {
+            background-color: color.$btn-bg-outline-hover;
+            border: 1px solid color.$btn-border-outline-hover;
+        }
+    }
 }
