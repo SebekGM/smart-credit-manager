@@ -31,4 +31,40 @@
             @include heading-2;
         }
     }
+
+    &-body {
+        padding: 20px 22px;
+        font-size: 12px;
+        font-family: typo.$font-family-primary;
+
+        &-row {
+            margin-bottom: 14px;
+
+            &__cat {
+                display: flex;
+                background-color: color.$bg-secondary;
+                border: 1px solid color.$border-primary;
+                border-radius: 9px;
+                padding: 3px;
+                gap: 2px;
+
+                &-btn {
+                    flex: 1;
+                    padding: 6px;
+                    border-radius: 7px;
+                    font-weight: typo.$font-weight-medium;
+                    color: #3D5280;
+                    cursor: pointer;
+                    text-align: center;
+                    transition: all .15s;
+
+                    &.active {
+                        background-color: color.$bg-primary;
+                        color: color.$txt-links;
+                        box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+                    }
+                }
+            }
+        }
+    }
 }
