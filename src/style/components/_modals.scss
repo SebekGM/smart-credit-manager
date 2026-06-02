@@ -16,7 +16,19 @@
     box-shadow: 0 8px 32px rgba(14, 30, 61, .12);
     transform: translateY(10px) scale(.98);
 
-    &.open {
-        transform: translateY(0) scale(1);
+    &-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 22px 14px;
+        border-bottom: 1px solid color.$border-primary;
+
+        &__close {
+            cursor: pointer;
+        }
+
+        &__title {
+            @include heading-2;
+        }
     }
 }
